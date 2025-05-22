@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: projetnodejs-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: projetnodejs
+  template:
+    metadata:
+      labels:
+        app: projetnodejs
+    spec:
+      containers:
+      - name: projetnodejs
+        image: projetnodejs:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8000

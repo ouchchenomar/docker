@@ -1,0 +1,12 @@
+{
+  "name": "projetnodejs",
+  "version": "1.0.0",
+  "description": "Application Node.js pour le projet de virtualisation",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+} 
